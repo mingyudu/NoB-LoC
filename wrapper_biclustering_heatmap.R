@@ -1,5 +1,6 @@
 ############ Draw the heatmap for each bicluster of the proteomics data
 
+####### Input:
 ### matrix: microbiome data: #sample by #protein
 ### infer.result: inference result including biclustering of each protein
 ### prot_df: annotation information of the proteins
