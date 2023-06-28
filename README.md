@@ -4,6 +4,12 @@ This repository contains the implementation of the Nonparametric Bayesian Local 
 
 ## Usage
 
+To compile the C++ file before implementation, use the following command in the terminal (replace `file_name.cpp` with the name of the corresponding C++ file):
+
+```bash
+R CMD SHLIB file_name.cpp
+```
+
 The repository includes three major code files:
 
 1. [**`wrapper_biclustering_mcmc.R`**](https://github.com/mingyudu/NoB-LoC/blob/main/wrapper_biclustering_mcmc.R): 
