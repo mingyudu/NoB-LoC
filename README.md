@@ -19,7 +19,7 @@ The repository includes three major code files:
      - `burn.in`: Burn-in period for discarding initial MCMC samples.
      - `seed`: Random seed number for reproducibility.
 
-2. **`wrapper_biclustering_summarize.R`**:
+2. [**`wrapper_biclustering_summarize.R`**](https://github.com/mingyudu/NoB-LoC/blob/main/wrapper_biclustering_summarize.R):
    - Function: `biclustering_summarize(save.result, burn.in, protein_id, sample_id, prot.clust.output, sample.clust.output)`
    - Description: Use this function to summarize the clustering results for proteins and samples.
    - Parameters:
@@ -30,7 +30,7 @@ The repository includes three major code files:
      - `prot.clust.output`: Output file name for protein clustering summary.
      - `sample.clust.output`: Output file name for sample clustering summary.
 
-3. **`wrapper_biclustering_heatmap.R`**:
+3. [**`wrapper_biclustering_heatmap.R`**](https://github.com/mingyudu/NoB-LoC/blob/main/wrapper_biclustering_heatmap.R):
    - Function: `plot_bicluster_heatmap(matrix, infer.result, prot_df, sample_df, scale='column', outfile)`
    - Description: Use this function to visualize the clustering results using heatmaps.
    - Parameters:
