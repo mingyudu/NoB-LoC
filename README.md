@@ -6,7 +6,7 @@ This repository contains the implementation of the Nonparametric Bayesian Local 
 
 The repository includes three major code files:
 
-1. **`wrapper_biclustering_mcmc.R`**: 
+1. [**`wrapper_biclustering_mcmc.R`**](https://github.com/mingyudu/NoB-LoC/blob/main/wrapper_biclustering_mcmc.R): 
    - Function: `biclustering_mcmc(matrix, pi_0, pi_1, beta, M, n.MCMC.iter, burn.in, seed)`
    - Description: Use this function to implement Markov Chain Monte Carlo (MCMC) for posterior inference.
    - Parameters:
