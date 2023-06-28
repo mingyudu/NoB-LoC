@@ -49,6 +49,34 @@ The repository includes three major code files:
 
 Please refer to the individual code files for detailed usage instructions and additional information about the input and output formats.
 
+```R
+# Read input data matrix
+
+library(readxl)
+mat <- read_excel('./data/prot2peaks_data.xlsx')
+mat <- subset(mat,select=-c(1:4))
+mat <- t(as.matrix(mat))
+
+# implement MCMC for posterior inference
+
+save.result = bicluster_mcmc(mat, pi_0 = 0.01, pi_1 = 0.5, beta = 1, M = 1, 
+                             n.MCMC.iter = 10, burn.in = 5, seed = 345467)
+
+# summarize the clustering result
+
+protein_id_list = readRDS('./data/protein_id_name.rds')
+protein_id = protein_id_list$ID
+sample_id = readRDS('./data/sample_id.rds')
+
+infer.result = bicluster_summarize(save.result, burn.in = 5000, protein_id, sample_id, 
+                                   prot.clust.output = 'prot.txt', sample.clust.output = 'sample.txt')
+
+# visualize the clustering result using heatmaps
+
+outfile <- "./results/biclusters_heatmap.pdf"
+plot_bicluster_heatmap(mat, infer.result, prot_df, sample_df, scale='column', outfile)
+```
+
 ## Acknowledgement
 
 We would like to express our gratitude to Dr. Juhee Lee at UCSC for providing the code for the NoB-LoC algorithm. If you are interested in the NoB-LoC algorithm, please refer to Dr. Juhee Lee's paper: [Link to the paper](https://www.tandfonline.com/doi/full/10.1080/01621459.2013.784705)
