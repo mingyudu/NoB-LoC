@@ -79,7 +79,7 @@ plot_bicluster_heatmap(mat, infer.result, prot_df, sample_df, scale='column', ou
 
 ## Acknowledgement
 
-We would like to express our gratitude to Dr. Juhee Lee at UCSC for providing the code for the NoB-LoC algorithm. If you are interested in the NoB-LoC algorithm, please refer to Dr. Juhee Lee's paper: [Link to the paper](https://www.tandfonline.com/doi/full/10.1080/01621459.2013.784705)
+We would like to express our gratitude to Dr. Juhee Lee at UCSC for providing the code for the NoB-LoC algorithm. If you are interested in the NoB-LoC algorithm, please refer to Dr. Juhee Lee's paper: [A Nonparametric Bayesian Model for Local Clustering With Application to Proteomics by Juhee Lee, Peter Müller, Yitan Zhu \& Yuan Ji](https://www.tandfonline.com/doi/full/10.1080/01621459.2013.784705)
 
 ## License
 
