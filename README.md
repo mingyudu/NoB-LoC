@@ -91,4 +91,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 Garcia, Nathan S., Mingyu Du, Michele Guindani, Matthew R. McIlvin, Dawn M. Moran, Mak A. Saito, and Adam C. Martiny. "Proteome trait regulation of marine Synechococcus elemental stoichiometry under global change." The ISME Journal 18, no. 1 (2024): wrae046.
 
-Published online: https://academic.oup.com/ismej/article/18/1/wrae046/7633219?login=true
+Published online: https://pubmed.ncbi.nlm.nih.gov/38513256/
